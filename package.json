@@ -1,0 +1,23 @@
+{
+  "name": "slackaws",
+  "version": "1.0.0",
+  "description": "slackaws",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samueljmello/slackaws.git"
+  },
+  "author": "Samuel J Mello",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samueljmello/slackaws/issues"
+  },
+  "homepage": "https://github.com/samueljmello/slackaws#readme",
+  "dependencies": {
+    "express": "4.16.3"
+  }
+}

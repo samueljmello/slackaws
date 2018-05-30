@@ -1,0 +1,8 @@
+version: '3'
+services:
+  slackaws:
+    build: .
+    container_name: slackaws
+    image: samueljmello/slackaws:latest
+    ports:
+      - "8080:8080"
