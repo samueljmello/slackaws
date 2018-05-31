@@ -3,6 +3,8 @@ services:
   slackaws:
     build: .
     container_name: slackaws
-    image: samueljmello/slackaws:latest
+    image: samueljmello/slackaws:${DOCKER_TAG:-latest}
     ports:
       - "8080:8080"
+    volumes:
+      - "./:/usr/src/app"
