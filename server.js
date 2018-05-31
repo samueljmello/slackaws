@@ -1,16 +1,28 @@
-'use strict';
+// jshint ignore: start
+'use strict'
 
-const express = require('express');
+const express = require('express')
+const app = express()
+const path = require('path')
 
-// Constants
-const PORT = 8080;
-const HOST = '0.0.0.0';
+// set app constants
+const PORT = 8080
+const HOST = '0.0.0.0'
 
-// App
-const app = express();
+// create new instance of express
+
+
+// set up template renderer
+app.set('view engine', 'pug')
+app.set('views', path.join(__dirname, 'views'))
+
+// set base response
 app.get('/', (req, res) => {
-  res.send('Hello world\n');
-});
+  res.render('index', { })
+})
 
-app.listen(PORT, HOST);
-console.log(`Running on http://${HOST}:${PORT}`);
+// start listening
+app.listen(PORT, HOST)
+
+// output for Docker
+console.log(`Running on http://${HOST}:${PORT}`)

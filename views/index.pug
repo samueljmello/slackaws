@@ -1,0 +1,23 @@
+extends ./layout.pug
+
+
+append head
+    title= "SlackAWS"
+append body
+  nav.navbar.navbar-default.navbar-static-top
+    div.container
+      div.navbar-header
+        a.navbar-brand= "SlackAWS"
+      div.collapse.navbar-collapse
+        ul.nav.navbar-nav
+          li.active
+            a(href="/")= "home"
+  div.container
+    div.page-header
+      h1= "Slack AWS Integration"
+    h3= "Repositories"
+    ul.list-group
+      li.list-group-item
+        a(href="https://github.com/samueljmello/slackaws",target="_BLANK")= "GitHub Repository"
+      li.list-group-item
+        a(href="https://hub.docker.com/r/samueljmello/slackaws/",target="_BLANK")= "DockerHub Repository"
